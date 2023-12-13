@@ -20,13 +20,13 @@
   </head>
   <body id="home">
     <!--HEADER-->
-     <header class="header vh-100  position-relative ">
-        <div class="text-container py-7  d-flex flex-column position-relative justify-content-center align-items-center">
+     <header class="header vh-100  position-relative    ">
+        <div class="text-container py-7   d-flex flex-column position-relative justify-content-center align-items-center">
          
          <h1 class="display-1 text-center  py-5 fw-bold  text-white" style="z-index: 2;" id="myname"></h1>
             <p class="lead text-center text-white"style="z-index: 2;">Aristeidis Zermpinis | Web Developer</p>
           
-          <a href="#about" class="btn btn-outline-light btn-lg mt-3"  style="z-index: 2;">
+          <a href="#about" class="btn btn-outline-warning btn-lg mt-3"  style="z-index: 2;">
             <div class="d-flex">
               <div class="me-3">
                 <i class="fas fa-chevron-down"></i>
@@ -39,7 +39,7 @@
          </div>
      </header>
      <!--ABOUT-->
-     <section id="about" class="about py-5 ">
+     <section id="about" class="about py-7 ">
         <div class="container">
          <div class="text-center">
             <h3 class="text-uppercase fw-bold text-dark">About Me</h3>
@@ -131,22 +131,23 @@
         </div>
        </div>
 <!--CONTACT-->
-<section id="contact" class="contact bg-dark  p-6">
+
+<section id="contact" class="contact bg-dark position-relative p-6 ">
   <div class="container">
     <div class="row">
       <div class="col-md-8 offset-md-2">
-        <h3 class="fw-bold text-center text-white">Contact Me</h3>
-        <hr class="w-25 mx-auto text-white">
-        <form action="" id="myform">
+        <h3 class="fw-bold text-center text-white position-relative"  style=" z-index:2;">Contact Me</h3>
+        <hr class="w-25 mx-auto text-white position-relative"  style=" z-index:2;">
+        <form action="" id="myform" style="z-index: 4;">
        
-          <input type="text" class="form-control  bg-transparent border-top-0 border-start-0 
+          <input type="text"  class="form-control   bg-transparent border-top-0 border-start-0 
           border-end-0 rounded-0 border-muted text-white" placeholder="Name" name="name" >
-          <input type="email" class="form-control bg-transparent mt-3 border-top-0 border-start-0 
+          <input type="email"  class="form-control bg-transparent mt-3 border-top-0 border-start-0 
           border-end-0 rounded-0 border-muted text-white" placeholder="Email" name="email" >
           <textarea class="form-control bg-transparent border-top-0 mt-3 border-start-0 
           border-end-0 rounded-0 border-muted text-white" placeholder="Message" name="name" ></textarea>
           <div class="mb-5 d-grid">
-          <button type="submit" class="btn  btn-outline-dark mt-5">Submit</button>
+          <button type="submit" class="btn  btn-outline-warning mt-5" style="z-index:2;">Submit</button>
         </div>
         </form>
       </div>
@@ -156,19 +157,20 @@
 
 
 
+
        <!--FOOTER-->
     <footer class="bg-dark text-center">
       <div class="footer container bg-dark">
         <div class="row">
           <div class="col-md-6 pt-4">
             <h3 class="text  fw-bold text-white">Contact Me</h3>
-             <a href="">
+             <a href="https://github.com/ariszerbi">
             <i class="fab fa-instagram fa-3x text-white mx-3"></i>
             </a>
-            <a href="">
+            <a href="https://github.com/ariszerbi">
             <i class="fab fa-linkedin fa-3x text-white mx-3 "></i>
             </a>
-           <a href="">
+           <a href="https://github.com/ariszerbi">
             <i class="fab fa-github fa-3x text-white mx-3 "></i>
            </a>
         </div>
@@ -179,7 +181,7 @@
 
             <ul class="list-group list-group-flush pt-2">
                 <li class="list-group-item bg-dark border-0">
-                  <a href="#home" class="href text-white">
+                  <a href="#home" id="myhome" class="href text-white">
                     <span>Home</span>
                   </a>
                 </li>

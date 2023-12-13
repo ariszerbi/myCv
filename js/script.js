@@ -1,7 +1,9 @@
 function runTypingEffect() {
+
     const text = "Hello I am Aristeidis Zermpinis";
-   
-    const typingElement =document.getElementById('myname') ;
+    document.getElementById('myname').textContent= '';
+    console.log( document.getElementById('myname').textContent)
+    var typingElement =document.getElementById('myname') ;
     const typingDelay = 200;
 
     typeText(text, typingElement, typingDelay);
@@ -14,6 +16,8 @@ function typeText(text, typingElement, delay) {
         }
     }        
        
-   
+    document.getElementById('myhome').addEventListener('click', function() {
+        runTypingEffect();
+    });
     
 document.addEventListener("DOMContentLoaded",  runTypingEffect)
