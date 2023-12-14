@@ -62,22 +62,11 @@
 .about-img{
   height:250px;
 }
-@media((max-height: 600px)){
+
+@media(max-width:767px){
   .text-container{
     padding-top: 0 !important;
-    
-  }
-
-}
-@media((max-height: 420px)){
-  .text-container{
-      padding-top: 0 !important;
-    
-  }
-
-}
-@media(max-width:767px){
-
+   }
   .about-class{
    
     flex-direction: column;
