@@ -4,6 +4,29 @@
 #profile{
  box-shadow: 0 0 10px rgb(255, 255, 255,0.5);;
 }
+.navbar .btn-outline-light:hover {
+  color: var(--bs-dark);
+}
+
+.navbar {
+  opacity:1.0;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky{
+  opacity: 0.3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#mybutton:hover{
+  background-color: rgb(255, 255, 255);
+  color:black !important;
+  opacity:3 !important;
+}
+#mybutton:hover span {
+  color:black !important;
+}
+
+
 .header{
   background: url('..//images/background1.png') center center no-repeat;
   background-size: cover;
@@ -19,7 +42,7 @@
     background:rgba(0,0,0,0.5) ;
 }
 .about{
-  background:linear-gradient( to bottom,rgb(141, 206, 236),rgb(130, 165, 194)) !important;
+  background:linear-gradient( to bottom,rgb(165, 169, 172),rgb(164, 177, 189)) !important;
 }
 .contact{
   background: url('..//images/contact.png') center center no-repeat;

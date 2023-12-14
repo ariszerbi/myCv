@@ -20,6 +20,32 @@ document.getElementById('myhome').addEventListener('click', function () {
     if (document.getElementById('myname').textContent === "Hello I am Aristeidis Zermpinis") {
         runTypingEffect();
     }
-    });
+});
+document.getElementById('mynav').addEventListener('mouseover', function () {
+    const navbar = document.querySelector('.navbar');
+    console.log("the mouse is over the button")
+    navbar.classList.remove('navbar-sticky');
+    navbar.classList.add('navbar');
+});
     
-document.addEventListener("DOMContentLoaded",  runTypingEffect)
+document.addEventListener("DOMContentLoaded", runTypingEffect)
+function userScroll() {
+    const navbar = document.querySelector('.navbar');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 70) {
+        navbar.classList.add('bg-dark');
+        navbar.classList.add('navbar-sticky'); 
+              
+      }else if (window.scrollY < 70) { 
+          navbar.classList.add('bg-dark');  
+          navbar.classList.remove('navbar-sticky');
+          navbar.classList.add('navbar'); 
+      } else {
+        navbar.classList.remove('bg-dark');
+        navbar.classList.remove('navbar-sticky');
+      }
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', userScroll);
