@@ -67,10 +67,13 @@
   height: 250px;
 }
 
-@media (max-width: 767px) {
+@media (max-height: 767px) {
   .text-container {
-    padding-top: 0 !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
   }
+}
+@media (max-width: 767px) {
   .about-class {
     flex-direction: column;
   }
