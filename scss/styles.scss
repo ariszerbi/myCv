@@ -71,7 +71,8 @@
 }
 @media((max-height: 420px)){
   .text-container{
-    visibility: hidden;
+      padding-top: 0 !important;
+    
   }
 
 }
