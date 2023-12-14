@@ -4,7 +4,7 @@ function runTypingEffect() {
     document.getElementById('myname').textContent= '';
     console.log( document.getElementById('myname').textContent)
     var typingElement =document.getElementById('myname') ;
-    const typingDelay = 200;
+    const typingDelay = 80;
 
     typeText(text, typingElement, typingDelay);
 }
@@ -16,8 +16,10 @@ function typeText(text, typingElement, delay) {
         }
     }        
        
-    document.getElementById('myhome').addEventListener('click', function() {
+document.getElementById('myhome').addEventListener('click', function () {
+    if (document.getElementById('myname').textContent === "Hello I am Aristeidis Zermpinis") {
         runTypingEffect();
+    }
     });
     
 document.addEventListener("DOMContentLoaded",  runTypingEffect)

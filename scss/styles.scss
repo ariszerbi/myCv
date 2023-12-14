@@ -19,7 +19,7 @@
     background:rgba(0,0,0,0.5) ;
 }
 .about{
-  background:linear-gradient( to bottom,rgb(160, 11, 140),rgb(201, 116, 204)) !important;
+  background:linear-gradient( to bottom,rgb(141, 206, 236),rgb(130, 165, 194)) !important;
 }
 .contact{
   background: url('..//images/contact.png') center center no-repeat;
@@ -62,14 +62,28 @@
 .about-img{
   height:250px;
 }
+@media((max-height: 567px)){
+  .text-container{
+    padding-top: 0 !important;
+    
+  }
 
+}
+@media((max-height: 420px)){
+  .text-container{
+    visibility: hidden;
+  }
+
+}
 @media(max-width:767px){
 
   .about-class{
    
     flex-direction: column;
   }  
-
+ .section{
+  width:100% !important;
+ }
   .about-img{
    padding-bottom:20px;
   }
