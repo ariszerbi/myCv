@@ -12,7 +12,10 @@
   opacity:1.0;
   transition: all 0.5s ease-in-out;
 }
+#myinfo{
 
+  
+}
 .navbar-sticky{
   opacity: 0.3;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -85,7 +88,20 @@
 .about-img{
   height:250px;
 }
+@media(max-height:500px){
+ 
+  .header{
+    padding-bottom: 0px !important;
+    margin-top:50px !important;
+  }
+  .about{
+    padding-top:50px !important;
+  }
+}
 @media(max-height:767px){
+  .navbar{
+    margin-bottom:10%;
+  }
     .text-container{
       padding-bottom: 0px !important;
       padding-top: 5px !important;
@@ -93,7 +109,7 @@
 
 }
 @media(max-width:767px){
-
+   
   .about-class{
    
     flex-direction: column;

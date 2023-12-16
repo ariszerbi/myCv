@@ -91,7 +91,19 @@
   height: 250px;
 }
 
+@media (max-height: 500px) {
+  .header {
+    padding-bottom: 0px !important;
+    margin-top: 50px !important;
+  }
+  .about {
+    padding-top: 50px !important;
+  }
+}
 @media (max-height: 767px) {
+  .navbar {
+    margin-bottom: 10%;
+  }
   .text-container {
     padding-bottom: 0px !important;
     padding-top: 5px !important;

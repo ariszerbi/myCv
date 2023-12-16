@@ -21,7 +21,8 @@
   <body id="home">
 
     <!--Navigation bar -->
-    <nav class="navbar navbar-expand fixed-top bg-dark navbar-dark " id="mynav" style="z-index: 10;">
+   
+    <nav class="navbar navbar-expand fixed-top bg-dark navbar-dark  " id="mynav" style="z-index: 10;">
       <div class="container">
        
        
@@ -35,28 +36,42 @@
               <a href="#about" class="nav-link fw-semibold">About Me</a>
             </li>
             <li class="nav-item">
-              <button
-              id="mybutton"
-              class="btn btn-outline-light fw-bold rounded-5 "
-              type="button"
-              data-bs-toggle="dropdown"
-              data-bs-targer="#about"
-          
+         
+                <button type="button" class="btn dropstart btn-outline-warning" 
+                data-bs-target="#myinfo"
+                data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                  Contact
+                  <ul class="dropdown-menu bg-dark my-5" style="width: 200px;" id="myinfo">
+                    <div class="row">
+                    <p class=" col-12 text-white "style="z-index: 2;"><i class="fas fa-phone"></i> +30 698 5764 950</p>
+                    <p class="col-12   text-white "style="z-index: 2;"><i class="fas fa-envelope"></i> aris.zerbinis@gmail.com</p>
+                   </div>
+                   </ul>
+           
+                </button>
+                
+                 
+                
               
-            >
-              <span class="fw-bold text-white ">Contact</span>
-            </button>
+              
             </li>
-          </ul>
           
+            </ul>
           </div>
+          
+           
+        
         </div>
        
-   
     </nav>
-        
+          
       
-
+         
+          
+    
+       
+     
        
             
       
@@ -258,7 +273,7 @@
       </div>
     </footer>
 
-
+    
      <script src="js/bootstrap.bundle.min.js"></script>
      <script src="js/lightbox-plus-jquery.min.js"></script>
      <script src="js/script.js"></script>
