@@ -1,6 +1,6 @@
 function runTypingEffect() {
 
-    const text = "Hello I am Aristeidis Zermpinis";
+    const text = "Hello, I am Aristeidis Zermpinis";
     document.getElementById('myname').textContent= '';
     console.log( document.getElementById('myname').textContent)
     var typingElement =document.getElementById('myname') ;
@@ -33,11 +33,11 @@ function userScroll() {
     const navbar = document.querySelector('.navbar');
   
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 70) {
+      if (window.scrollY > 90) {
         navbar.classList.add('bg-dark');
         navbar.classList.add('navbar-sticky'); 
               
-      }else if (window.scrollY < 70) { 
+      }else if (window.scrollY < 90) { 
           navbar.classList.add('bg-dark');  
           navbar.classList.remove('navbar-sticky');
           navbar.classList.add('navbar'); 
