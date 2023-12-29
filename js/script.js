@@ -22,6 +22,7 @@ document.getElementById('myhome').addEventListener('click', function () {
     }
 });
 document.getElementById('mynav').addEventListener('mouseover', function () {
+   
     const navbar = document.querySelector('.navbar');
     console.log("the mouse is over the button")
     navbar.classList.remove('navbar-sticky');
